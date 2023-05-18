@@ -453,7 +453,7 @@ export class FanXiaomiCard extends LitElement {
       return false;
     } else if (!this.isConfigureAsyncFinished && this.hass) {
       this.configureAsync();
-      return false;
+      return this.isConfigureAsyncFinished;
     }
 
     const oldHass = changedProps.get("hass") as HomeAssistant | undefined;
