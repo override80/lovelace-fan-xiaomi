@@ -812,7 +812,7 @@ export class FanXiaomiCard extends LitElement {
       .attr-row .attr {
         width: 100%;
         padding-bottom: 2px;
-        border-left: 1px solid #01be9e;
+        border-left: 1px solid var(--accent-color);
       }
       .attr-row .attr:first-child {
         border-left: none;
@@ -844,8 +844,8 @@ export class FanXiaomiCard extends LitElement {
         height: 30px;
       }
       .op-row .op.active button {
-        color: #01be9e !important;
-        text-shadow: 0 0 10px #01be9e;
+        color: var(--accent-color) !important;
+        text-shadow: 0 0 10px var(--accent-color);
       }
       .fanbox-container {
         position: relative;
@@ -959,7 +959,7 @@ export class FanXiaomiCard extends LitElement {
         line-height: 24px;
       }
       .c3.active {
-        border: 2px solid #8dd5c3;
+        border: 2px solid var(--accent-color);
       }
       .c3 span ha-icon {
         width: 100%;
